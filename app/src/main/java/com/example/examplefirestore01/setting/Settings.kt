@@ -67,7 +67,7 @@ class Settings(private val context: Context){
 
     val getScore: Flow<Int?> = context.dataStore.data
         .map { preferences->
-            preferences[USER_SCORE] ?: 8
+            preferences[USER_SCORE] ?: 1
         }
 
     suspend fun increaseScore(tun: Int){

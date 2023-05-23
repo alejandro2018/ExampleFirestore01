@@ -1,4 +1,4 @@
-package com.example.example01.publiadmob
+package com.example.examplefirestore01.publiadmob
 
 import android.app.Activity
 import android.content.Context
