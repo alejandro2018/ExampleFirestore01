@@ -53,7 +53,7 @@ fun HomeView(navController: NavHostController) {
             contentPadding = PaddingValues(0.dp)
         ) {
             Text(
-                text = "ButtonsApp",
+                text = "TestOne",
                 fontWeight = FontWeight.Bold,
                 style = MaterialTheme.typography.bodySmall,
                 fontSize = 25.sp,
@@ -74,7 +74,7 @@ fun HomeView(navController: NavHostController) {
             contentPadding = PaddingValues(0.dp)
         ) {
             Text(
-                text = "Frases Cortas",
+                text = "Setting",
                 fontWeight = FontWeight.Bold,
                 style = MaterialTheme.typography.bodyLarge,
                 fontSize = 25.sp,
