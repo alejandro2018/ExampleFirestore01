@@ -1,4 +1,4 @@
-package com.example.example01.home
+package com.example.examplefirestore01.home
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.*
@@ -13,7 +13,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
-import com.example.example01.navigation.Routes
+import com.example.examplefirestore01.navigation.Routes
 
 
 @SuppressLint("SuspiciousIndentation")

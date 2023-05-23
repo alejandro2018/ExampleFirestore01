@@ -1,4 +1,4 @@
-package com.example.example01.navigation
+package com.example.examplefirestore01.navigation
 
 
 import androidx.compose.runtime.Composable
@@ -9,10 +9,10 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.example01.home.HomeView
-import com.example.example01.setting.SettingsScreen
-import com.example.example01.testsone.TestOne
-import com.example.example01.testsone.TestTwo
+import com.example.examplefirestore01.home.HomeView
+import com.example.examplefirestore01.setting.SettingsScreen
+import com.example.examplefirestore01.testsone.TestOne
+import com.example.examplefirestore01.testsone.TestTwo
 
 @Composable
 fun BottomNavGraph(showAd: () -> Unit, navController: NavHostController) {

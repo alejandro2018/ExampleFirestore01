@@ -1,9 +1,9 @@
-package com.example.example01.publiadmob
+package com.example.examplefirestore01.publiadmob
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.viewinterop.AndroidView
-import com.example.example01.R
+import com.example.examplefirestore01.R
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView

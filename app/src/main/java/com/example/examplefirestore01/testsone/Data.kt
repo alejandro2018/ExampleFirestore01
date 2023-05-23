@@ -1,4 +1,4 @@
-package com.example.example01.testsone
+package com.example.examplefirestore01.testsone
 
 data class Data(
     val correct: String? = null,

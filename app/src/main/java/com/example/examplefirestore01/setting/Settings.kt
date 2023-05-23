@@ -1,4 +1,4 @@
-package com.example.example01.setting
+package com.example.examplefirestore01.setting
 
 import android.content.Context
 import androidx.compose.foundation.layout.Arrangement

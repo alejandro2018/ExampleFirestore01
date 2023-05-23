@@ -1,4 +1,4 @@
-package com.example.example01.testsone
+package com.example.examplefirestore01.testsone
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -26,8 +26,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
-import com.example.example01.setting.Settings
-import com.example.example01.setting.SettingsScreen
+import com.example.examplefirestore01.setting.Settings
 import kotlinx.coroutines.launch
 
 @Composable

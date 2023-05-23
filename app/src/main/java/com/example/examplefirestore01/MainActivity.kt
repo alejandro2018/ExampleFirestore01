@@ -10,11 +10,19 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.examplefirestore01.navigation.MainScreen
 import com.example.examplefirestore01.ui.theme.ExampleFirestore01Theme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        MobileAds.initialize(this)
+        val adMobInterstitial = AdMobInterstitial(this)
+        adMobInterstitial.loadAd()
+
         setContent {
             ExampleFirestore01Theme {
                 // A surface container using the 'background' color from the theme
@@ -22,7 +30,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    MainScreen{
+                        adMobInterstitial.showAdd(this)
+                    }
                 }
             }
         }

@@ -1,4 +1,4 @@
-package com.example.example01.navigation
+package com.example.examplefirestore01.navigation
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.*
@@ -13,7 +13,7 @@ import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.example01.publiadmob.AdMobBanner
+import com.example.examplefirestore01.publiadmob.AdMobBanner
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable

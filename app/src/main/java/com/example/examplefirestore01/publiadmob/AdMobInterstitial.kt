@@ -3,7 +3,7 @@ package com.example.example01.publiadmob
 import android.app.Activity
 import android.content.Context
 import android.widget.Toast
-import com.example.example01.R
+import com.example.examplefirestore01.R
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.FullScreenContentCallback

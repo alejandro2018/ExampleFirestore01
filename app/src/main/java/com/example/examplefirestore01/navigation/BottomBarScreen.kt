@@ -1,4 +1,4 @@
-package com.example.example01.navigation
+package com.example.examplefirestore01.navigation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home

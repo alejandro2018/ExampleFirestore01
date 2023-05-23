@@ -1,4 +1,4 @@
-package com.example.example01.testsone
+package com.example.examplefirestore01.testsone
 
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.tasks.await

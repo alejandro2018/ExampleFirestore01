@@ -1,4 +1,4 @@
-package com.example.example01.home
+package com.example.examplefirestore01.home
 
 class Home (
     val id: Int,
