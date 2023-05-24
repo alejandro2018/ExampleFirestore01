@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "712990677840",
+    "firebase_url": "https://flutter1-7e677.firebaseio.com",
+    "project_id": "flutter1-7e677",
+    "storage_bucket": "flutter1-7e677.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712990677840:android:3654b069434eba5a782a55",
+        "android_client_info": {
+          "package_name": "com.example.examplefirestore01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712990677840-movd8lrc42sq57snnhrfq2h0birjha0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuYgs2F7xDltHFKqpeBKsv71GGBiqzsAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712990677840-movd8lrc42sq57snnhrfq2h0birjha0d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "712990677840-3t1qcmpku1pcd42qg8ogrps4ccpi0oml.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alejandro.WhatsAppClone1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712990677840:android:ae822fac79034ac8782a55",
+        "android_client_info": {
+          "package_name": "com.example.pruebafirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712990677840-movd8lrc42sq57snnhrfq2h0birjha0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuYgs2F7xDltHFKqpeBKsv71GGBiqzsAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712990677840-movd8lrc42sq57snnhrfq2h0birjha0d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "712990677840-3t1qcmpku1pcd42qg8ogrps4ccpi0oml.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alejandro.WhatsAppClone1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712990677840:android:163bc188b7e02dc0782a55",
+        "android_client_info": {
+          "package_name": "com.example.pruebafirestore2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712990677840-movd8lrc42sq57snnhrfq2h0birjha0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuYgs2F7xDltHFKqpeBKsv71GGBiqzsAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712990677840-movd8lrc42sq57snnhrfq2h0birjha0d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "712990677840-3t1qcmpku1pcd42qg8ogrps4ccpi0oml.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alejandro.WhatsAppClone1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

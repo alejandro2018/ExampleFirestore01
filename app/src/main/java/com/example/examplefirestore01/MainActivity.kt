@@ -11,7 +11,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.examplefirestore01.navigation.MainScreen
+import com.example.examplefirestore01.publiadmob.AdMobInterstitial
 import com.example.examplefirestore01.ui.theme.ExampleFirestore01Theme
+import com.google.android.gms.ads.MobileAds
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
