@@ -69,27 +69,6 @@ fun HomeView(navController: NavHostController) {
                 .height(70.dp)
             ,
             onClick = {
-                navController.navigate(Routes.SettingsScreen.route)
-            },
-            contentPadding = PaddingValues(0.dp)
-        ) {
-            Text(
-                text = "Setting",
-                fontWeight = FontWeight.Bold,
-                style = MaterialTheme.typography.bodyLarge,
-                fontSize = 25.sp,
-            )
-        }
-
-        Spacer(modifier = Modifier.height(30.dp))
-
-        Button(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 20.dp)
-                .height(70.dp)
-            ,
-            onClick = {
                // navController.navigate(Routes.TestOne.route)
             },
             contentPadding = PaddingValues(0.dp)
