@@ -1,5 +1,6 @@
 package com.example.examplefirestore01.testsone
 
+import android.app.Activity
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -25,15 +26,17 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.example.examplefirestore01.setting.Settings
+import dagger.hilt.android.EntryPointAccessors
 import kotlinx.coroutines.launch
 
 @Composable
 fun TestOne(
     showAd: () -> Unit,
     navController: NavHostController,
-    viewModel: MainViewModel = hiltViewModel()
+    //viewModel: MainViewModel = hiltViewModel()
 ) {
     // fetches data from firebase when querying
     var data: Data
@@ -47,11 +50,17 @@ fun TestOne(
     var valida by remember { mutableStateOf(true) }
     var verifica by remember { mutableStateOf(false) }
 
-    // This did not work
-    val numerator: Int by viewModel.numerator.collectAsState(1)
     // This was to count to show the intestitial
     var adCount by rememberSaveable { mutableStateOf(0) }
 
+    val factory = EntryPointAccessors.fromActivity(
+        LocalContext.current as Activity,
+        ViewModelFactoryProvider::class.java
+    ).mainViewModelFactory()
+
+    val viewModel: MainViewModel = viewModel(factory =
+    MainViewModel.provideMainViewModelFactory(factory, 3
+    ))
 
     Column(
         modifier = Modifier
