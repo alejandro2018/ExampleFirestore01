@@ -45,22 +45,22 @@ fun TestOne(
     val scope = rememberCoroutineScope()
     val dataStore = Settings(context)
     // Value to be sent to query firebase
-    val userScore = dataStore.getScore.collectAsState(initial = "uno")
+    val userScore = dataStore.getScore.collectAsState(initial = 1)
     // Logica app, no change here
     var valida by remember { mutableStateOf(true) }
     var verifica by remember { mutableStateOf(false) }
 
-    // This was to count to show the intestitial
-    var adCount by rememberSaveable { mutableStateOf(0) }
 
+    //Viewmodel Factory section
     val factory = EntryPointAccessors.fromActivity(
         LocalContext.current as Activity,
         ViewModelFactoryProvider::class.java
     ).mainViewModelFactory()
 
     val viewModel: MainViewModel = viewModel(factory =
-    MainViewModel.provideMainViewModelFactory(factory, 3
+    MainViewModel.provideMainViewModelFactory(factory, userScore.value as Int
     ))
+    //End of Viewmodel Factory Section
 
     Column(
         modifier = Modifier
@@ -191,7 +191,7 @@ fun TestOne(
                         .height(70.dp),
                         onClick = {
 
-                            if (userScore.value as Int >= 3) {
+                            if (userScore.value as Int >= 4) {
                                 scope.launch {
                                     dataStore.deleteScore()
                                 }
@@ -203,12 +203,6 @@ fun TestOne(
                                     dataStore.increaseScore(1)
                                 }
                             }
-                            // Interstitial admob is required to be displayed here
-                            //    LaunchedEffect(Unit ){
-                            //    if (adCount % 4 == 1) showAd()
-                            //                    adCount++
-                            //                }
-
 
                             valida = true
                         }) {
@@ -242,7 +236,7 @@ fun TestOne(
                         .height(70.dp),
                         onClick = {
 
-                            if (userScore.value as Int >= 3) {
+                            if (userScore.value as Int >= 4) {
                                 scope.launch {
                                     dataStore.deleteScore()
                                 }
@@ -254,12 +248,6 @@ fun TestOne(
                                     dataStore.increaseScore(1)
                                 }
                             }
-
-                            // Interstitial admob is required to be displayed here
-                            //    LaunchedEffect(Unit ){
-                            //    if (adCount % 4 == 1) showAd()
-                            //                    adCount++
-                            //                }
 
                             valida = true
                         }) {
