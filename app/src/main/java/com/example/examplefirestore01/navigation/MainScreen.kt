@@ -13,24 +13,22 @@ import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.examplefirestore01.publiadmob.AdMobBanner
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
-fun MainScreen(showAd: () -> Unit) {
+fun MainScreen() {
     val navController = rememberNavController()
 
     Scaffold(
         bottomBar = {
             Column() {
-                AdMobBanner()
                 Spacer(modifier = Modifier.padding(bottom = 10.dp))
                 BottomBar(navController = navController)
             }
         }
     ) {
 
-        BottomNavGraph(showAd, navController = navController)
+        BottomNavGraph(navController = navController)
     }
 }
 

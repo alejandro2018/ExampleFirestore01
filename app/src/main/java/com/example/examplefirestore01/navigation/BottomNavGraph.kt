@@ -15,7 +15,7 @@ import com.example.examplefirestore01.testsone.TestOne
 import com.example.examplefirestore01.testsone.TestTwo
 
 @Composable
-fun BottomNavGraph(showAd: () -> Unit, navController: NavHostController) {
+fun BottomNavGraph(navController: NavHostController) {
 
     var adCount by rememberSaveable { mutableStateOf(0) }
 
@@ -31,7 +31,7 @@ fun BottomNavGraph(showAd: () -> Unit, navController: NavHostController) {
             SettingsScreen(navController)
         }
         composable(route = Routes.TestOne.route) {
-            TestOne(showAd, navController)
+            TestOne(navController)
         }
         composable(route = Routes.TestTwo.route) {
             TestTwo(navController)

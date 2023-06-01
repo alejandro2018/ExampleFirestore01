@@ -34,7 +34,6 @@ import kotlinx.coroutines.launch
 
 @Composable
 fun TestOne(
-    showAd: () -> Unit,
     navController: NavHostController,
     //viewModel: MainViewModel = hiltViewModel()
 ) {
