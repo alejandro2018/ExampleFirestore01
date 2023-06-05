@@ -197,7 +197,7 @@ fun TestOne(
                             } else {
                                 data = viewModel.data.value
                                 // a este metodo intento pasar el UserScore, pero no se envia
-                                viewModel.fetchDataVariant(userScore.value as Int)
+                                viewModel.readDataVariant(userScore.value as Int)
                                 scope.launch {
                                     dataStore.increaseScore(1)
                                 }
@@ -242,7 +242,7 @@ fun TestOne(
                             } else {
                                 data = viewModel.data.value
                                 // a este metodo intento pasar el UserScore, pero no se envia
-                                viewModel.fetchDataVariant(userScore.value as Int)
+                                viewModel.readDataVariant(userScore.value as Int)
                                 scope.launch {
                                     dataStore.increaseScore(1)
                                 }
