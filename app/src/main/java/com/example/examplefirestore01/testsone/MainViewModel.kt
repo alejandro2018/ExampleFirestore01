@@ -67,7 +67,7 @@ class MainViewModel @AssistedInject constructor(
         }
     }
 
-    fun fetchDataVariant(nu: Int) {
+    fun readDataVariant(nu: Int) {
         viewModelScope.launch {
             repository.fetchDataVariant(nu)?.let {
                 data.value = it
