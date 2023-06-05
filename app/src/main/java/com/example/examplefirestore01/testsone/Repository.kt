@@ -21,7 +21,7 @@ class Repository {
     }
 
     // fetch data variant using whereEqualTo()
-    suspend fun fetchDataVariant(num: Int): Data? {
+    suspend fun readDataVariant(num: Int): Data? {
         val list = db.collection(COLLECTION_NAME).whereEqualTo("numero", num).get().await()
             .toObjects<Data>()
         return if (list.isEmpty()) {
